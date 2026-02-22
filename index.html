@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
     *{
@@ -22,50 +23,52 @@
     <section class="grid grid-cols-3 max-w-[1110px] max-h-[149px]">
         <div class="card w-[250px] bg-base-100 card-xs shadow-sm">
   <div class="card-body">
-    <h2 class="card-title  text-gray-700">Total</h2>
+    <h2 id="total" class="card-title  text-gray-700">Total</h2>
     <p class="text-gray-900">0</p>
     </div>
   </div>
         <div class="card w-[250px] bg-base-100 card-xs shadow-sm">
   <div class="card-body">
     <h2 class="card-title  text-gray-700">Interview</h2>
-    <p class="text-green-500">0</p>
+    <p id="Interview" class="text-green-500">0</p>
     </div>
   </div>
         <div class="card w-[250px] bg-base-100 card-xs shadow-sm">
   <div class="card-body">
     <h2 class="card-title text-gray-700">Rejected</h2>
-    <p class="text-red-500">0</p>
+    <p id="Rejected" class="text-red-500">0</p>
     </div>
   </div>
     </section>
     <div class="max-w-[1140px] flex justify-between ">
          <h1 class="py-[50px] font-bold text-2xl text-blue-600">Available Jobs</h1>
-         <h3 class="py-[50px] mr-[150px]">0 Jobs</h3>
+         <h3 id="count" class="py-[50px] mr-[150px]">0 Jobs</h3>
     </div>
     <section class="">
         <div class="flex gap-[20px] ">
-            <button class="btn btn-primary w-[80px]">All</button>
-            <button class="btn">Interview</button>
-            <button class="btn">Rejected</button>
+            <button id="all-btn" class="btn btn-primary w-[80px]">All</button>
+            <button id="Interview-btn" class="btn">Interview</button>
+            <button id="Rejected-btn" class="btn">Rejected</button>
         </div>
     </section>
     <section class="">
         
     <div class=" pt-10 card w-[1000px] bg-base-100 card-xs shadow-sm">
+       
        <div class="card-body">
      <h1 class="font-bold text-2xl text-blue-600">Mobile First Corp</h1>
       <h1 class="pb-[20px] text-2xl text-gray-600">React Native Developer</h1>
       <h1 class=" text-2xl text-gray-600">Remote • Full-time • $130,000 - $175,000</h1>
-      <button class="btn btn-soft w-[150px]">Not Applied</button>
+      <button id="not-applied-btn" class="btn btn-soft w-[150px]">Not Applied</button>
       <h1 class=" text-2xl text-gray-600">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</h1>
        </div>
        <div class="flex gap-[10px] pb-[20px]">
-           <button class="btn btn-outline btn-accent">Interview</button>
-           <button class="btn btn-outline btn-error">Rejected</button>
+           <button id="main-interview-btn" class="btn btn-outline btn-accent">Interview</button>
+           <button id="main-rejected-btn" class="btn btn-outline btn-error">Rejected</button>
         </div>
    </div>
         
     </section>
+    <script src="js-folder/style.js"></script>
 </body>
 </html>
