@@ -1,0 +1,5 @@
+What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
+Ans:
+getElementByID : When we are want to catch any specific element in html
+getElementByClassName : When we are want to catch same type element in html
+querySelector : When we are want to catch all element in html but we have to use class name in css
