@@ -12,13 +12,13 @@
 
     let currentTab = 'All';
 
-    // এলিমেন্ট সিলেক্টর
+    
     const jobListContainer = document.querySelector('section:last-of-type');
     const jobCountDisplay = document.getElementById('count');
     const interviewDashCount = document.getElementById('Interview');
     const rejectedDashCount = document.getElementById('Rejected');
     
-    // Total কাউন্টার সিলেক্ট করার জন্য (তোমার HTML-এ 'total' আইডি ছিল <h2> এ, আমরা তার পরের <p> ট্যাগকে ধরছি)
+    
     const totalCountDash = document.getElementById('total').nextElementSibling;
 
     function renderJobs() {
@@ -63,17 +63,17 @@
     }
 
     function updateCounts() {
-        const totalCount = jobs.length; // মোট ৮টি
+        const totalCount = jobs.length; 
         const interviewCount = jobs.filter(j => j.status === 'Interview').length;
         const rejectedCount = jobs.filter(j => j.status === 'Rejected').length;
         
-        // ড্যাশবোর্ড আপডেট
+    
         totalCountDash.innerText = totalCount; 
         interviewDashCount.innerText = interviewCount;
         rejectedDashCount.innerText = rejectedCount;
     }
 
-    // ট্যাব বাটন ইভেন্ট
+    
     document.getElementById('all-btn').addEventListener('click', () => switchTab('All', 'all-btn'));
     document.getElementById('Interview-btn').addEventListener('click', () => switchTab('Interview', 'Interview-btn'));
     document.getElementById('Rejected-btn').addEventListener('click', () => switchTab('Rejected', 'Rejected-btn'));
